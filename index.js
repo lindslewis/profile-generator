@@ -3,7 +3,10 @@ const Employee = require('./lib/Employee')
 const Intern = require('./lib/Intern')
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
+const generateHtml = require("./util/generateHtml")
+const fs = require('fs')
 
+const team = [ ]
 
 // starting prompt for the manager
 const managerPrompt = () => {
@@ -29,6 +32,8 @@ const managerPrompt = () => {
             name: 'office',
         }
     ]).then((ans=> {
+        let manager = new Manager(ans.name, ans.id, ans.email, ans.office)
+        team.push(manager)
         start()
     }))
 }
@@ -50,7 +55,8 @@ const start = () => {
             console.log("You will now be adding the information for your Intern.");
             internPrompt();
         }else {
-             console.log("All employees have been added!")
+            console.log("All employees have been added!")
+            makeFile()
         }
     })
 } 
@@ -81,6 +87,8 @@ const engineerPrompt = () => {
         }
         
     ]).then ((ans=> {
+        let engineer = new Engineer (ans.name, ans.id, ans.email, ans.github)
+        team.push(engineer)
         start()
     }))
  }
@@ -110,8 +118,21 @@ const engineerPrompt = () => {
         }
         
     ]).then ((ans=> {
+        let intern = new Intern(ans.name, ans.id, ans.email, ans.school)
+        team.push(intern)
         start()
     }))
  }
 
+ const makeFile = (fileName, data) => {
+    fs.writeFile('./dist/index.html', generateHtml(team), "UTF-8", (err) => {
+        console.log("Good work! You've created a new file.")
+       if(err){
+          throw err;
+       }
+    })
+ }
+
  managerPrompt()
+
+ 
