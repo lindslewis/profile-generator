@@ -15,6 +15,8 @@ This is achieved via the use of command-line prompts.
 
 ## Walkthrough Video
 
+[![Watch the video](https://user-images.githubusercontent.com/104105172/180347231-816e4797-cc91-46f6-a445-47b91f5d5e8a.mp4)
+
 ## Usage
 This app must be initialized within a terminal, following command-line prompts once node index.js has been input in the teminal. The user may fill out as many positions as they need, and once they are done, a new HTML file is created from the input that they've given. This way also allows for easier additions to their team.
 
@@ -61,3 +63,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 University of Washington Coding Bootcamp: 
 Instructor and Teaching Assistants
+
+
+
