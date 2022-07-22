@@ -20,9 +20,9 @@ This app must be initialized within a terminal, following command-line prompts o
 
 ## Composition
 This app utilizes several different NPM packages:
-- [Node](#https://www.npmjs.com/package/node)
-- [Inquirer](#https://www.npmjs.com/package/inquirer)
-- [Jest](#https://www.npmjs.com/package/jest)
+- [Node](https://www.npmjs.com/package/node)
+- [Inquirer](https://www.npmjs.com/package/inquirer)
+- [Jest](https://www.npmjs.com/package/jest)
 
 Inquirer was used in order to ask prompting questions in the terminal, take input from the user after the questions and to received better feedback on the errors as the app was designed.
 
@@ -53,11 +53,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Credits
 
-[Node.js](#https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback) fileSystem information.
+[Node.js](https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback) fileSystem information.
 
-[Stephanie Gomez](#https://github.com/smariagomez)
+[Stephanie Gomez](https://github.com/smariagomez)
 
-[Axel Kern](#https://github.com/Axeljk)
+[Axel Kern](https://github.com/Axeljk)
 
 University of Washington Coding Bootcamp: 
 Instructor and Teaching Assistants
